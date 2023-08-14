@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+}
+
+
+h1{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: auto;
+    margin: 200px 0px;
+    
+}
+
+.law-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 350px;
+  padding: 40px;
+  outline: 1px solid #fff;
+  border-radius: 15px;
+  transition: all linear 0.15s;
+}
+
+.law-card:hover {
+  box-shadow: 0px 2px 100px rgb(32, 32, 32, 0.04);
+  outline: 1px solid rgba(95, 95, 95, 0.2);
+  transition: all linear 0.15s;
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: rgb(55, 201, 55);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title h1 {
+  font-size: 24px;
+  color: #00a1de;
+  text-transform: capitalize;
+}
+
+/* emblem */
+
+.logo-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-date img {
+  width: 7%;
+}
+
+.title h3 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification span {
+  font-weight: bold;
+}
+
+.short-description{
+    display: flex;
+    gap: 20px;    
+}
+
+.short-description p {
+  color: rgb(32, 32, 32, 0.9);
+  font-size: 16px;
+  line-height: 140%;
+
+}
+
+.button{
+    background-color: #FAD201;
+    width: 150px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: #202020;
+    font-weight: 500;
+}
