@@ -6,27 +6,63 @@
 
 html {
   font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+h1 {
+  color: #202020;
+  text-transform: capitalize;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 150px
+
+}
+
+.header .actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.header .links a {
+  color: #fad201;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header input {
+  width: 500px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  outline: 1px solid #fff;
   background-color: #fafafa;
+  transition: all linear 0.2s;
 }
 
-
-h1{
-    color: #fff;
-    text-transform: capitalize;
+.header input:focus {
+  outline: 1px solid #00a1de;
+  transition: all linear 0.2s;
 }
 
-.cards-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: auto;
-    margin: 200px 0px;
-    
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: auto;
+  margin: 100px 150px;
 }
 
 .law-card {
-  background-color: #fff;
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -89,33 +125,135 @@ h1{
   font-weight: bold;
 }
 
-.short-description{
-    display: flex;
-    gap: 20px;    
+.short-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 32px;
 }
 
 .short-description p {
   color: rgb(32, 32, 32, 0.9);
   font-size: 16px;
   line-height: 140%;
+}
+
+.button {
+  background-color: #fad201;
+  width: 150px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: #202020;
+  font-weight: 500;
+}
+
+
+/* law proposal */
+
+.main-container{
+  margin: 50px 150px;
+  display: flex;
+  gap: 200px;
 
 }
 
-.button{
-    background-color: #FAD201;
-    width: 150px;
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 16px;
-    margin-top: 16px;
-    cursor: pointer;
+.left{
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.button a{
-    text-decoration: none;
-    color: #202020;
-    font-weight: 500;
+.left .title{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
+
+.left .notification{
+  color: #fad201;
+}
+
+.left .logo-date img{
+  width: 100%;
+}
+
+.left h1{
+  font-size: 32px;
+}
+
+.image{
+  width: 900px;
+  height: 500px;
+}
+
+.image img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* right side */
+
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 50%;
+}
+
+.right form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.right h2{
+  color: #00a1de;
+  text-transform: capitalize;
+}
+
+form label{
+  font-weight: 600;
+  font-size: 14px;
+  color: #202020;
+}
+
+form input, textarea{
+  width: 600px;
+  padding: 14px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  outline: 2px solid rgb(217, 217, 217, 0.5);
+  transition: all linear 0.2s;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+form input:focus, textarea:focus{
+  outline: 1px solid #00a1de;
+  transition: all linear 0.2s;
+}
+
+form .send-button{
+  background-color: #00a1de;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/* right side */
