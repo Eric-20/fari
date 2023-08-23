@@ -6,11 +6,11 @@
 
 html {
   font-family: "Inter", sans-serif;
-  background-color: #fff;
+  background-color: #101010;
 }
 
 h1 {
-  color: #202020;
+  color: #fff;
   text-transform: capitalize;
 }
 
@@ -28,6 +28,12 @@ h1 {
   gap: 40px;
 }
 
+.header .links{
+  color: #fad201;
+  display: flex;
+  gap: 32px;
+}
+
 
 .header .links a {
   color: #fad201;
@@ -42,8 +48,8 @@ h1 {
   border-radius: 8px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  outline: 1px solid #fff;
-  background-color: #fafafa;
+  outline: 2px solid rgb(255, 255, 255, 0.1);
+  background-color: #141414;
   transition: all linear 0.2s;
 }
 
@@ -62,13 +68,13 @@ h1 {
 }
 
 .law-card {
-  background-color: #fafafa;
+  background-color: #141414;
   display: flex;
   flex-direction: column;
   width: 500px;
   height: 350px;
   padding: 40px;
-  outline: 1px solid #fff;
+  outline: 1px solid #151515;
   border-radius: 15px;
   transition: all linear 0.15s;
 }
@@ -83,6 +89,7 @@ h1 {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  gap: 20px;
   color: rgb(55, 201, 55);
 }
 
@@ -111,7 +118,7 @@ h1 {
 }
 
 .title h3 {
-  color: rgba(0, 0, 0, 0.5);
+  color: #d9d9d9;
   font-size: 14px;
 }
 
@@ -133,9 +140,9 @@ h1 {
 }
 
 .short-description p {
-  color: rgb(32, 32, 32, 0.9);
+  color: #d9d9d9;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 150%;
 }
 
 .button {
@@ -175,6 +182,13 @@ h1 {
   gap: 30px;
 }
 
+.left p{
+  color: #d9d9d9;
+  line-height: 150%;
+  width: 900px;
+  text-align: justify;
+}
+
 .left .title{
   margin-top: 50px;
   display: flex;
@@ -182,7 +196,7 @@ h1 {
 }
 
 .left .notification{
-  color: #fad201;
+  color: #d9d9d9;
 }
 
 .left .logo-date img{
@@ -191,6 +205,11 @@ h1 {
 
 .left h1{
   font-size: 32px;
+}
+
+.reading-law p{
+  font-size: 20px;
+  opacity: 0.8;
 }
 
 .image{
@@ -226,24 +245,24 @@ h1 {
 
 form label{
   font-weight: 600;
-  font-size: 14px;
-  color: #202020;
+  font-size: 16px;
+  color: #d9d9d9;
 }
 
 form input, textarea{
   width: 600px;
-  padding: 14px;
+  padding: 24px;
   border: none;
-  background-color: #fff;
+  background-color: #141414;
   border-radius: 8px;
-  outline: 2px solid rgb(217, 217, 217, 0.5);
+  outline: 2px solid #141414;
   transition: all linear 0.2s;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
 }
 
 form input:focus, textarea:focus{
-  outline: 1px solid #00a1de;
+  outline: 2px solid rgb(0, 161, 222, 0.5);
   transition: all linear 0.2s;
 }
 
@@ -257,3 +276,67 @@ form .send-button{
   cursor: pointer;
 }
 /* right side */
+
+
+/* suggestion */
+
+
+.image-container{
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)) ,url(./images/laws.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+
+
+.image-container h2{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+.proposal form input,
+.proposal form textarea
+{
+  width: 1000px;
+  padding: 32px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+/* suggestion */
+
+/* home images */
+
+.home-images{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)) ,url(./images/parliament1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.home-images h1{
+  color: #fff;
+  font-size: 60px;
+}
+/* home images */
